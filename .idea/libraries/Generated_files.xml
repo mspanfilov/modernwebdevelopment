@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/unit2/walkthroughs/w1/w1.js" />
+        <item url="file://$PROJECT_DIR$/unit2/walkthroughs/w3/w3.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/unit2/walkthroughs/w1/w1.js" />
+      <root url="file://$PROJECT_DIR$/unit2/walkthroughs/w3/w3.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
