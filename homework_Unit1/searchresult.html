@@ -4,6 +4,8 @@
     <title>Auction SearchPage</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
 
 </head>
 <body>
@@ -45,11 +47,14 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="row">
             <div class="col-md-12 col-sm-6 col-xs-12">
-                <h6>Product</h6>
-                <input type="text" class="form-control" title="Product title" placeholder="Product title">
+                <label for="productTitle">Product</label>
+                <input type="text" class="form-control" id="productTitle" title="Product title" placeholder="Product title">
             </div>
             <div class="col-md-12 col-sm-6 col-xs-12">
-                <input type="text" class="form-control" title="Category" placeholder="Category">
+                <select class="form-control">
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                </select>
             </div>
             </div>
             </div>
@@ -60,23 +65,50 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="row">
             <div class="col-sm-12 col-xs-12">
-                <h6>Current Price</h6>
-                <input type="text" class="form-control" title="Price1" placeholder="Price1">
+                <label for="id_low_bound_price">Current Price</label>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input id="id_low_bound_price" type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input id="id_upper_bound_price" type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-12 col-xs-12">
-                <input type="text" class="form-control" title="Slider" placeholder="Slider">
+                <input type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
+                       data-slider-step="10" data-slider-value="[200,750]" id="id_price_slider"
+                       style="width: 350px;">
             </div>
             </div>
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
+            <div class="row">
             <div class="col-sm-12 col-xs-12">
-                <h6>Max Auction Close Date</h6>
-                <input type="text" class="form-control" title="Calendar" placeholder="Calendar">
+                <label for="datepicker">Max Auction Close Date</label>
+                <div class="input-group date">
+                    <input type="text" class="form-control" id="datepicker">
+                    <span class="input-group-addon">
+                        <span id="calendar" class="glyphicon glyphicon-calendar" style="cursor: pointer"></span>
+                    </span>
+                </div>
             </div>
             <div class="col-sm-12 col-xs-12">
-                <input type="text" class="form-control" title="Spinner" placeholder="Spinner">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <h5 style="text-align: right">Number of Bids:</h5>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <input type="number" class="form-control col-sm-6 col-xs-6" title="Number of Bids" min="0">
+                    </div>
+                </div>
             </div>
             </div>
             </div>
@@ -229,6 +261,54 @@
 
 <script src="assets/js/jquery-2.1.0.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-slider.js"></script>
+<script src="assets/js/bootstrap-datepicker.js"></script>
+
+
+<script>
+    $(function () {
+        initDatepicker();
+        initSlider();
+
+        function initSlider() {
+            var sliderElem = $('#id_price_slider');
+            var lowBoundElem = $('#id_low_bound_price').get(0);
+            var upperBoundElem = $('#id_upper_bound_price').get(0);
+            // todo: calculate slider width on window resize
+            sliderElem[0].style.width = $('#id_price_block').width() + 'px';
+            sliderElem.slider();
+            var value = sliderElem.slider().data('slider').getValue();
+            lowBoundElem.value = value[0];
+            upperBoundElem.value = value[1];
+            sliderElem.slider()
+                    .on('slide', function (ev) {
+                        lowBoundElem.value = ev.value[0];
+                        upperBoundElem.value = ev.value[1];
+                    });
+        }
+
+        function initDatepicker() {
+            $("#datepicker").datepicker({
+                autoclose: true
+            });
+            $("#datepicker").datepicker('setDate', new Date());
+            $("#calendar").click(function () {
+                $("#datepicker").datepicker('show');
+            });
+        }
+
+        $(window).bind('resize', function () {
+            resizeSlider();
+        });
+
+        function resizeSlider() {
+            var sliderElem = $('#id_price_slider');
+            var newWidth = $('#id_price_block').width();
+            sliderElem.width(newWidth);
+            sliderElem.parent().width(newWidth);
+        }
+    });
+</script>
 
 </body>
 </html>
