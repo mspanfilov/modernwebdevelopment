@@ -1,0 +1,182 @@
+<div class="container">
+
+    <div class="row">
+
+        <div id="nav_pages">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Search Results</li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="productTitle">Product</label>
+                <input type="text" class="form-control" id="productTitle" placeholder="Product title">
+                <br/>
+                <select class="form-control">
+                    <option value="categoryA">Category A</option>
+                    <option value="categoryB">Category B</option>
+                    <option value="categoryC">Category C</option>
+                </select>
+
+            </div>
+            <div class="col-md-4" id="id_price_block">
+                <label>Current Price</label>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input id="id_low_bound_price" type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">$</span>
+                            <input id="id_upper_bound_price" type="text" class="form-control" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <br/>
+
+                <!--<div class="row">-->
+                <input type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000"
+                       data-slider-step="10" data-slider-value="[200,750]" id="id_price_slider"
+                       style="width: 350px;">
+                <!--</div>-->
+
+                <br/>
+
+            </div>
+            <div class="col-md-4">
+                <label>Max Auction Close Date</label>
+
+                <div class="input-group date">
+                    <input type="text" class="form-control" id="datepicker">
+            <span class="input-group-addon">
+                <span id="calendar" class="glyphicon glyphicon-calendar" style="cursor: pointer"/>
+            </span>
+                </div>
+
+                <br/>
+
+                <div class="form-group row">
+                    <div class="col-md-9">Number of Bids</div>
+                    <div class="col-md-3"><input type="number" min="0" value="1" class="form-control"/></div>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="col-lg-12" style="text-align: center">
+            <button class="btn btn-primary btn-lg" type="button">Find now</button>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <hr/>
+
+        <div class="row">
+
+            <div class="col-md-6" ng-repeat="item in result_items">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{item.image}}" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h3><a href="#/product/{{item.id_product}}">{{item.title}}</a></h3>
+                        {{item.description}}
+                    </div>
+                </div>
+                <br/>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 col-sm-push-8">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-4">
+                                <label class="control-label">$ {{item.price}}</label>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-8">
+                                <p>Current Price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-4">
+                                <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<label class="control-label">{{item.watchers}}</label>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-8">
+                                <span>Watchers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 col-sm-pull-8">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-4">
+                                <label class="control-label">{{item.elapsed}}h left</label>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-8">
+                                <span>Today 15:23</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+//    $(function () {
+//        initDatepicker();
+//        initSlider();
+//
+//        function initSlider() {
+//            var sliderElem = $('#id_price_slider');
+//            var lowBoundElem = $('#id_low_bound_price').get(0);
+//            var upperBoundElem = $('#id_upper_bound_price').get(0);
+//            // todo: calculate slider width on window resize
+//            sliderElem[0].style.width = $('#id_price_block').width() + 'px';
+//            sliderElem.slider();
+//            var value = sliderElem.slider().data('slider').getValue();
+//            lowBoundElem.value = value[0];
+//            upperBoundElem.value = value[1];
+//            sliderElem.slider()
+//                    .on('slide', function (ev) {
+//                        lowBoundElem.value = ev.value[0];
+//                        upperBoundElem.value = ev.value[1];
+//                    });
+//        }
+//
+//        function initDatepicker() {
+//            $("#datepicker").datepicker({
+//                autoclose: true
+//            });
+//            $("#datepicker").datepicker('setDate', new Date());
+//            $("#calendar").click(function () {
+//                $("#datepicker").datepicker('show');
+//            });
+//        }
+//
+//        $(window).bind('resize', function () {
+//            resizeSlider();
+//        });
+//
+//        function resizeSlider() {
+//            var sliderElem = $('#id_price_slider');
+//            var newWidth = $('#id_price_block').width();
+//            sliderElem.width(newWidth);
+//            sliderElem.parent().width(newWidth);
+//        }
+//    });
+</script>
+
