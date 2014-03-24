@@ -10,7 +10,6 @@ module auction.controllers {
         $scope.awesomeThings = [
           'HTML5 Boilerplate',
           'AngularJS',
-          'Karma',
           'IntelliJ IDEA'
         ];
       }
