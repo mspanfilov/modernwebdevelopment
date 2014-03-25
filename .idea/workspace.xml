@@ -63,7 +63,47 @@
     <favorites_list name="modernwebdevelopment" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw2/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1003">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework_Unit2/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="193" column="6" selection-start="8597" selection-end="8597" vertical-scroll-proportion="-23.615385" vertical-offset="2667" max-vertical-offset="3383">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw2/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.26923" vertical-offset="423" max-vertical-offset="1139">
+              <folding>
+                <marker date="1395530566000" expanded="true" signature="1142:1295" placeholder="..." />
+                <marker date="1395530566000" expanded="true" signature="1235:1263" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homework_Unit2/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.49928877" vertical-offset="351" max-vertical-offset="1054">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -86,6 +126,8 @@
         <option value="$PROJECT_DIR$/unit4/walkthroughs/w2/karma.conf.js" />
         <option value="$PROJECT_DIR$/unit4/walkthroughs/w3/karma.conf.js" />
         <option value="$PROJECT_DIR$/homework_Unit1/searchresult.html" />
+        <option value="$PROJECT_DIR$/homework_Unit2/app/views/main.html" />
+        <option value="$PROJECT_DIR$/homework_Unit2/app/views/searchresult.html" />
       </list>
     </option>
   </component>
@@ -122,6 +164,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -130,33 +173,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modernwebdevelopment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hw3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modernwebdevelopment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hw3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,7 +184,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
+    <property name="options.lastSelected" value="settings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -178,9 +196,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/hw3/hw3.iml" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\IdeaProjects\modernwebdevelopment\homework_Unit2\app\images" />
+      <recent name="C:\Users\Max\IdeaProjects\modernwebdevelopment\homework_Unit2\app\styles" />
+      <recent name="C:\Users\Max\IdeaProjects\modernwebdevelopment\homework_Unit2" />
       <recent name="C:\Users\Max\IdeaProjects\modernwebdevelopment\homework_Unit1\assets\css" />
       <recent name="C:\Users\Max\IdeaProjects\modernwebdevelopment\homework_Unit1\assets\js" />
     </key>
@@ -469,11 +491,13 @@
       <workItem from="1395572603104" duration="783000" />
       <workItem from="1395573701708" duration="5109000" />
       <workItem from="1395679105258" duration="364000" />
+      <workItem from="1395765687343" duration="1490000" />
+      <workItem from="1395767535299" duration="2317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54424000" />
+    <option name="totallyTimeSpent" value="58231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
@@ -484,11 +508,12 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -501,7 +526,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4127604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -527,76 +551,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/homework_Unit1/assets/css/datepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework_Unit1/assets/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9536" selection-start="9706" selection-end="9706" vertical-scroll-proportion="0.1399177" vertical-offset="0" max-vertical-offset="729" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/walkthroughs/w1/w1-solution.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/walkthroughs/w3/w3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/v2/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="21" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.8547486" vertical-offset="0" max-vertical-offset="986" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/v2/app/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit4/walkthroughs/w1/test/spec/BasicSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit4/walkthroughs/w2/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="12" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.74797845" vertical-offset="346" max-vertical-offset="1241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit4/walkthroughs/w3/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="12" selection-start="1774" selection-end="1774" vertical-scroll-proportion="0.52" vertical-offset="714" max-vertical-offset="1275" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit4/walkthroughs/w3/test/spec/WalkthroughModuleSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="12" selection-start="2653" selection-end="2653" vertical-scroll-proportion="0.74826145" vertical-offset="686" max-vertical-offset="1428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/v0/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/v0/app/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/v0/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unit2/v1/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
@@ -630,11 +584,6 @@
     <entry file="file://$PROJECT_DIR$/unit2/v2/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit2/v2/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="846" selection-end="846" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="1054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit2/v2/app/views/main.html">
@@ -707,11 +656,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="6392" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/service/ProductService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/directive/FooterDirective.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
@@ -747,39 +691,168 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/refs.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit1/assets/css/slider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="2431" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/model/ProductModel.ts">
+    <entry file="file://$PROJECT_DIR$/hw3/hw3.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/controller/MainController.ts">
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_Unit1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="28" selection-start="147" selection-end="8744" vertical-scroll-proportion="-17.73077" vertical-offset="2854" max-vertical-offset="3638">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit1/searchresult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="67" selection-start="11083" selection-end="11083" vertical-scroll-proportion="-0.0748503" vertical-offset="4827" max-vertical-offset="5508" />
+        <state line="13" column="11" selection-start="267" selection-end="10569" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="5508">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hw3/hw3.iml">
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/app/views/searchresult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+        <state line="254" column="6" selection-start="10778" selection-end="10778" vertical-scroll-proportion="-98.80769" vertical-offset="1749" max-vertical-offset="4420">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/model/ProductModel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/refs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/service/ProductService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="482" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/controller/MainController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/scripts/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="721">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/app/scripts/refs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/app/scripts/refs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/app/scripts/controllers/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="6" selection-start="8597" selection-end="8597" vertical-scroll-proportion="-23.615385" vertical-offset="2667" max-vertical-offset="3383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.884615" vertical-offset="491" max-vertical-offset="1207">
+          <folding>
+            <marker date="1395574538458" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit2/v2/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="846" selection-end="846" vertical-scroll-proportion="-0.015647227" vertical-offset="351" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.26923" vertical-offset="423" max-vertical-offset="1139">
+          <folding>
+            <marker date="1395530566000" expanded="true" signature="1142:1295" placeholder="..." />
+            <marker date="1395530566000" expanded="true" signature="1235:1263" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_Unit2/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.49928877" vertical-offset="351" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
