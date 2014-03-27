@@ -3,15 +3,15 @@
 module auction.controllers {
   'use strict';
 
+  export interface IMainScope extends ng.IScope {
+        model: MainController;
+  }
+
   export class MainController {
       static $inject = ['$scope'];
 
-      constructor($scope) {
-        $scope.awesomeThings = [
-          'HTML5 Boilerplate',
-          'AngularJS',
-          'IntelliJ IDEA'
-        ];
+      constructor(private $scope: IMainScope) {
+          this.$scope.model = this;
       }
   }
 
