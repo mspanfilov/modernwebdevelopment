@@ -10,8 +10,19 @@ module auction.controllers {
   export class MainController {
       static $inject = ['$scope'];
 
-      constructor(private $scope: IMainScope) {
-          this.$scope.model = this;
+      constructor($scope) {
+          //this.$scope.model = this;
+
+          $scope.templateUrl = 'views/main.html';
+
+          $scope.goSearch = function () {
+              $scope.templateUrl = 'views/search.html';
+          }
+
+          $scope.goHome = function () {
+              $scope.templateUrl = 'views/main.html';
+          }
+
       }
   }
 
