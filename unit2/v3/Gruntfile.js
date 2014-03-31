@@ -132,6 +132,22 @@ module.exports = function (grunt) {
       }
     },
 
+    less: {
+      dist: {
+        options: {
+          paths: ['<%= yeoman.app %>/bower_components'],
+          cleancss: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/styles',
+          src: '{,*/}*.less',
+          dest: '.tmp/styles',
+          ext: '.css'
+        }]
+      }
+    },
+
     // Empties folders to start fresh
     clean: {
       dist: {
@@ -166,7 +182,8 @@ module.exports = function (grunt) {
     'bower-install': {
       app: {
         html: '<%= yeoman.app %>/index.html',
-        ignorePath: '<%= yeoman.app %>/'
+        ignorePath: '<%= yeoman.app %>/',
+        exclude: ['bower_components/bootstrap/dist/css/bootstrap.css']
       }
     },
 
@@ -301,17 +318,20 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'copy:styles',
-        'ts'
+        'ts',
+        'less'
       ],
       test: [
         'copy:styles',
-        'ts'
+        'ts',
+        'less'
       ],
       dist: [
         'copy:styles',
         'imagemin',
         'svgmin',
-        'ts'
+        'ts',
+        'less'
       ]
     },
 

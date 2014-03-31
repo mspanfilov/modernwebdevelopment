@@ -1,7 +1,7 @@
 <div class="container">
 
 <ol class="breadcrumb">
-    <li><a ng-click="goHome()">Home</a></li>
+    <li><a href="javascript:void(0);" ng-click="goHome()">Home</a></li>
     <li class="active">Search</li>
 </ol>
 
@@ -217,3 +217,47 @@
 </div>
 
 </div>
+
+<script>
+    $(function () {
+        initDatepicker();
+        initSlider();
+
+        function initSlider() {
+            var sliderElem = $('#id_price_slider');
+            var lowBoundElem = $('#id_low_bound_price').get(0);
+            var upperBoundElem = $('#id_upper_bound_price').get(0);
+            sliderElem[0].style.width = $('#id_price_block').width() + 'px';
+            sliderElem.slider();
+            var value = sliderElem.slider().data('slider').getValue();
+            lowBoundElem.value = value[0];
+            upperBoundElem.value = value[1];
+            sliderElem.slider()
+                    .on('slide', function (ev) {
+                        lowBoundElem.value = ev.value[0];
+                        upperBoundElem.value = ev.value[1];
+                    });
+        }
+
+        function initDatepicker() {
+            $("#datepicker").datepicker({
+                autoclose: true
+            });
+            $("#datepicker").datepicker('setDate', new Date());
+            $("#calendar").click(function () {
+                $("#datepicker").datepicker('show');
+            });
+        }
+
+        $(window).bind('resize', function () {
+            resizeSlider();
+        });
+
+        function resizeSlider() {
+            var sliderElem = $('#id_price_slider');
+            var newWidth = $('#id_price_block').width();
+            sliderElem.width(newWidth);
+            sliderElem.parent().width(newWidth);
+        }
+    });
+</script>
