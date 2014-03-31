@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" />
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/CodeSamples_Unit1" libraries="{Node.js v0.10.26 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/unit2" libraries="{Node.js v0.10.26 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/unit3" libraries="{Node.js v0.10.26 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/unit4" libraries="{Node.js v0.10.26 Core Modules}" />
+    <file url="PROJECT" libraries="{Generated files, angularjs-DefinitelyTyped}" />
+  </component>
+</project>
 

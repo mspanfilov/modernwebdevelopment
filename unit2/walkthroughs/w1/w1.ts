@@ -4,7 +4,7 @@ function Person(name) {
 }
 
 Person.prototype.doTaxes= function(){
-    var taxDeduction = 500 ;
+    var taxDeduction = 500;
 
     //private function
     function mafiaSpecial(income){

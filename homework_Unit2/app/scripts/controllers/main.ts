@@ -13,6 +13,7 @@ module auction.controllers {
       constructor($scope) {
           //this.$scope.model = this;
 
+
           $scope.templateUrl = 'views/main.html';
 
           $scope.goSearch = function () {
