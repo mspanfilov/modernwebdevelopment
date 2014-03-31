@@ -1,0 +1,263 @@
+<div class="container">
+
+<ol class="breadcrumb">
+    <li><a href="javascript:void(0);" ng-click="goHome()">Home</a></li>
+    <li class="active">Search</li>
+</ol>
+
+<div class="row">
+    <!-- Fields for search -->
+    <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <label for="productTitle">Product</label>
+                    <input type="text" class="form-control" id="productTitle" title="Product title" placeholder="Product title">
+                    <br>
+                </div>
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <select class="form-control">
+                        <option value="Electronics">Electronics</option>
+                        <option value="Fashion">Fashion</option>
+                    </select>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <label for="id_low_bound_price">Current Price</label>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input id="id_low_bound_price" type="text" class="form-control" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input id="id_upper_bound_price" type="text" class="form-control" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-12 col-xs-12" id="id_price_block">
+                            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="10000"
+                                   data-slider-step="1" data-slider-value="[0,10000]" id="id_price_slider"
+                                   style="width: 350px;">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <label for="datepicker">Max Auction Close Date</label>
+                            <div class="input-group date">
+                                <input type="text" class="form-control" id="datepicker">
+                    <span class="input-group-addon">
+                        <span id="calendar" class="glyphicon glyphicon-calendar" style="cursor: pointer"></span>
+                    </span>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6">
+                                    <h5 style="text-align: right">Number of Bids:</h5>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <input type="number" class="form-control col-sm-6 col-xs-6" title="Number of Bids" min="0">
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="text-center">
+        <button type="button">Find now</button>
+    </div>
+    <!-- / Fields for search -->
+</div>
+
+<br/><br/>
+
+<div class="row">
+    <!-- Featured Products list with thumbnails and description  -->
+    <ul class="list-unstyled">
+        <li class="col-md-6 col-sm-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <h2><a href="javascript:void(0)">Item's title</a></h2>
+                </div>
+
+                <div class="col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-6">
+                            <a href="javascript:void(0)"><img src="images/01.jpg" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                            <p>
+                                <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <h4>6h left</h4>
+                        </div>
+                        <div class="col-sm-12 col-xs-6">
+                            <h6>Today 15:23</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <h4 class="glyphicon glyphicon-eye-open">17</h4>
+                        </div>
+                        <div class="col-sm-12 col-xs-6">
+                            <h6>Watchers</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <h4>$ 1234</h4>
+                        </div>
+                        <div class="col-sm-12 col-xs-6">
+                            <h6>Current Price</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-md-6 col-sm-12">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <h2><a href="javascript:void(0)">Item's title</a></h2>
+                </div>
+
+                <div class="col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-6">
+                            <a href="javascript:void(0)"><img src="images/02.jpg" alt="" class="img-responsive"></a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                            <p>
+                                <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <h4>6h left</h4>
+                        </div>
+                        <div class="col-sm-12 col-xs-6">
+                            <h6>Today 15:23</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <h4 class="glyphicon glyphicon-eye-open">17</h4>
+                        </div>
+                        <div class="col-sm-12 col-xs-6">
+                            <h6>Watchers</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-6">
+                            <h4>$ 1234</h4>
+                        </div>
+                        <div class="col-sm-12 col-xs-6">
+                            <h6>Current Price</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- / Featured Products list with thumbnails and description  -->
+</div>
+
+</div>
+
+<script>
+    $(function () {
+        initDatepicker();
+        initSlider();
+
+        function initSlider() {
+            var sliderElem = $('#id_price_slider');
+            var lowBoundElem = $('#id_low_bound_price').get(0);
+            var upperBoundElem = $('#id_upper_bound_price').get(0);
+            sliderElem[0].style.width = $('#id_price_block').width() + 'px';
+            sliderElem.slider();
+            var value = sliderElem.slider().data('slider').getValue();
+            lowBoundElem.value = value[0];
+            upperBoundElem.value = value[1];
+            sliderElem.slider()
+                    .on('slide', function (ev) {
+                        lowBoundElem.value = ev.value[0];
+                        upperBoundElem.value = ev.value[1];
+                    });
+        }
+
+        function initDatepicker() {
+            $("#datepicker").datepicker({
+                autoclose: true
+            });
+            $("#datepicker").datepicker('setDate', new Date());
+            $("#calendar").click(function () {
+                $("#datepicker").datepicker('show');
+            });
+        }
+
+        $(window).bind('resize', function () {
+            resizeSlider();
+        });
+
+        function resizeSlider() {
+            var sliderElem = $('#id_price_slider');
+            var newWidth = $('#id_price_block').width();
+            sliderElem.width(newWidth);
+            sliderElem.parent().width(newWidth);
+        }
+    });
+</script>
