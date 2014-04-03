@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/homework_Unit1/homework_Unit1.iml" filepath="$PROJECT_DIR$/homework_Unit1/homework_Unit1.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_Unit2/homework_Unit2.iml" filepath="$PROJECT_DIR$/homework_Unit2/homework_Unit2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_Unit2v2/homework_Unit2v2.iml" filepath="$PROJECT_DIR$/homework_Unit2v2/homework_Unit2v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_Unit3/homework_Unit3.iml" filepath="$PROJECT_DIR$/homework_Unit3/homework_Unit3.iml" />
       <module fileurl="file://$PROJECT_DIR$/hw2/hw2.iml" filepath="$PROJECT_DIR$/hw2/hw2.iml" />
       <module fileurl="file://$PROJECT_DIR$/hw3/hw3.iml" filepath="$PROJECT_DIR$/hw3/hw3.iml" />
       <module fileurl="file://$PROJECT_DIR$/solution_Unit2/solution_Unit2.iml" filepath="$PROJECT_DIR$/solution_Unit2/solution_Unit2.iml" />
