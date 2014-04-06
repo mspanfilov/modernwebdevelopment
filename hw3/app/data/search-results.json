@@ -1,0 +1,25 @@
+{
+    "heading":"Search results",
+    "items": [
+        {
+            "id": 5,
+            "title": "Unit 5",
+            "thumb": "images/05.jpg",
+            "url": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
+            "timeleft": "2",
+            "watchers": "12",
+            "price": "84"
+        },
+        {
+            "id": 6,
+            "title": "Unit 6",
+            "thumb": "images/06.jpg",
+            "url": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim.",
+            "timeleft": "2",
+            "watchers": "12",
+            "price": "99"
+        }
+    ]
+}
