@@ -22,12 +22,12 @@
 
     <div class="row">
         <div class="col-md-4">
-            <img src="{{product.image}}" alt="{{product.title}}" class="img-responsive"/>
+            <img src="{{model.product.thumb}}" alt="{{model.product.title}}" class="img-responsive"/>
             <br/>
 
             <div class="row">
                 <div class="col-md-4">
-                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<label class="control-label">{{product.watchers}}</label>
+                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<label class="control-label">{{model.product.watchers}}</label>
                 </div>
                 <div class="col-md-4">
                     <label class="control-label">Watchers</label>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="product-description-holder col-md-8">
-            <h2>{{product.title}}</h2>
+            <h2>{{model.product.title}}</h2>
 
             <p>Seller: starmotors (135) 100% positive feedback</p>
 
@@ -48,12 +48,12 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <label class="control-label">$ {{product.price}} [5 bids]</label>
+                            <label class="control-label">$ {{model.product.price}} [5 bids]</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <label class="control-label">Time left {{product.elapsed}}h</label>
+                            <label class="control-label">Time left {{model.product.timeleft}}h</label>
                         </div>
                     </div>
                     <div class="row">
@@ -75,7 +75,7 @@
 
             <p>Item's description</p>
 
-            <p>{{product.description}}</p>
+            <p>{{model.product.description}}</p>
         </div>
     </div>
 
