@@ -1,6 +1,7 @@
 package com.transcapital.dit.osok.auction;
 
 import java.lang.reflect.Modifier;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -11,25 +12,25 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Main {
 
-    List<User> users = new ArrayList<User>();
-    List<Product> products = new ArrayList<Product>();
+    static List<User> users = new ArrayList<User>();
+    static List<Product> products = new ArrayList<Product>();
 
-    public User findUserById(int id){
+    public static User findUserById(int id){
         for (User i : users){
             if (i.id == id){
                 return i;
             }
         }
-        //return i;
+        return null;
     }
 
-    public Product findProductById(int id){
+    public static Product findProductById(int id){
         for (Product i : products){
             if (i.id == id){
                 return i;
             }
         }
-        //return i;
+        return null;
     }
 
     public static void main(String[] args) {
@@ -62,10 +63,11 @@ public class Main {
         product1.title = "Product1";
         product1.thumb = "images/01.jpg";
         product1.description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...";
+        product1.quantity = 1;
         product1.auctionEndTime = LocalDateTime.now();
         product1.watchers = 0;
-        product1.minimalPrice = 50;
-        product1.reservedPrice = 100;
+        product1.minimalPrice = new BigDecimal(50);
+        product1.reservedPrice = new BigDecimal(100);
         products.add(product1);
 
         Product product2 = new Product();
@@ -73,10 +75,11 @@ public class Main {
         product2.title = "Product2";
         product2.thumb = "images/02.jpg";
         product2.description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...";
+        product2.quantity = 1;
         product2.auctionEndTime = LocalDateTime.now();
         product2.watchers = 0;
-        product2.minimalPrice = 50;
-        product2.reservedPrice = 200;
+        product2.minimalPrice = new BigDecimal(50);
+        product2.reservedPrice = new BigDecimal(200);
         products.add(product2);
 
         Product product3 = new Product();
@@ -84,10 +87,11 @@ public class Main {
         product3.title = "Product3";
         product3.thumb = "images/03.jpg";
         product3.description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...";
+        product3.quantity = 1;
         product3.auctionEndTime = LocalDateTime.now();
         product3.watchers = 0;
-        product3.minimalPrice = 100;
-        product3.reservedPrice = 200;
+        product3.minimalPrice = new BigDecimal(100);
+        product3.reservedPrice = new BigDecimal(200);
         products.add(product3);
 
         // starting auction process
@@ -95,16 +99,18 @@ public class Main {
         final AtomicInteger bidNumber = new AtomicInteger();
         bidNumber.set(0);
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask(){
+        timer.schedule(new TimerTask() {
             @Override
             public void run() {
-              System.out.println("try bid №" + bidNumber.incrementAndGet());
-               Bid bid = new Bid();
-               bid.produtId = (new Random()).nextInt(2) + 1;
-               Product currProduct = findProductById(bid.produtId);
-               //bid.amount = (new Random()).nextDouble(currProduct.reservedPrice) + 1;
-               bid.user = findUserById((new Random()).nextInt(2) + 1);
-               bids.add(bid);
+                int BidId = bidNumber.incrementAndGet();
+                Bid bid = new Bid();
+                bid.id = BidId;
+                bid.product = findProductById(1);//findProductById((new Random()).nextInt(3) + 1);
+                //bid.amount = (new Random()).nextDouble(currProduct.reservedPrice) + 1;
+                bid.desiredQuantity = 1;
+                bid.user = findUserById((new Random()).nextInt(3)+1);
+                System.out.println("try bid №" + BidId + " bid.user " + bid.user.name);
+                bids.add(bid);
             }
         }, 0, 1000);
 

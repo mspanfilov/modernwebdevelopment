@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.json-1.0.3">
+    <CLASSES>
+      <root url="jar://C:/j/2014/wildfly-8.0.0.Final/modules/system/layers/base/org/glassfish/javax/json/main/javax.json-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

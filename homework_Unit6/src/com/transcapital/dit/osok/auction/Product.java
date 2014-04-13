@@ -1,5 +1,6 @@
 package com.transcapital.dit.osok.auction;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
@@ -10,8 +11,9 @@ public class Product {
     public String title;
     public String thumb;
     public String description;
+    public int quantity;   // How many items the seller has
     public LocalDateTime auctionEndTime;
     public int watchers;
-    public double minimalPrice;     // Don't sell unless the bid is more than min price
-    public double reservedPrice;   // If a bidder offers reserved price, the auction is closed
+    public BigDecimal minimalPrice;     // Don't sell unless the bid is more than min price
+    public BigDecimal reservedPrice;   // If a bidder offers reserved price, the auction is closed
 }
