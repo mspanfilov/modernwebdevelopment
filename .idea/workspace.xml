@@ -64,19 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_Unit6/src/com/transcapital/dit/osok/auction/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="91" selection-start="3577" selection-end="3577" vertical-scroll-proportion="0.0" vertical-offset="1819" max-vertical-offset="2108">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProductService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+            <state line="20" column="13" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -91,10 +82,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuctionWebSocketConfig.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CorsResponseFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/http/CorsResponseFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuctionWebSocketConfig.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/websocket/AuctionWebSocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.091644205" vertical-offset="0" max-vertical-offset="742">
+            <state line="8" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -103,7 +103,7 @@
       <file leaf-file-name="BidEndpointApi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/websocket/BidEndpointApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="13" column="13" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -112,42 +112,43 @@
       <file leaf-file-name="Product.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/entity/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2124#2125#0" expanded="false" />
-                <element signature="e#2152#2153#0" expanded="false" />
-                <element signature="e#2194#2195#0" expanded="false" />
-                <element signature="e#2228#2229#0" expanded="false" />
-                <element signature="e#2260#2261#0" expanded="false" />
-                <element signature="e#2288#2289#0" expanded="false" />
-                <element signature="e#2330#2331#0" expanded="false" />
-                <element signature="e#2364#2365#0" expanded="false" />
-                <element signature="e#2394#2395#0" expanded="false" />
-                <element signature="e#2420#2421#0" expanded="false" />
-                <element signature="e#2458#2459#0" expanded="false" />
-                <element signature="e#2488#2489#0" expanded="false" />
-                <element signature="e#2526#2527#0" expanded="false" />
-                <element signature="e#2560#2561#0" expanded="false" />
-                <element signature="e#2614#2615#0" expanded="false" />
-                <element signature="e#2660#2661#0" expanded="false" />
-                <element signature="e#2695#2696#0" expanded="false" />
-                <element signature="e#2726#2727#0" expanded="false" />
-                <element signature="e#2774#2775#0" expanded="false" />
-                <element signature="e#2814#2815#0" expanded="false" />
-                <element signature="e#2846#2847#0" expanded="false" />
-                <element signature="e#2871#2872#0" expanded="false" />
-                <element signature="e#2908#2909#0" expanded="false" />
-                <element signature="e#2936#2937#0" expanded="false" />
-              </folding>
+            <state line="7" column="13" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="996" max-vertical-offset="1717">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataEngine.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Product.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaToJSONStreaming.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/JavaToJSONStreaming.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaToJSONObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/JavaToJSONObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="61" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataEngine.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/data/DataEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+            <state line="14" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="-0.22457626" vertical-offset="244" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -394,8 +395,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -788,11 +789,12 @@
       <workItem from="1397397103049" duration="100000" />
       <workItem from="1397397207217" duration="73000" />
       <workItem from="1397397709505" duration="2414000" />
+      <workItem from="1397536518295" duration="792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66170000" />
+    <option name="totallyTimeSpent" value="66962000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -816,7 +818,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -842,8 +844,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -867,16 +869,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hw2/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1078" selection-end="1101" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solution_Unit2/app/views/partial/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/solution_Unit2/app/views/partial/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719" />
@@ -1051,16 +1043,12 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0/src.zip!/java/util/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="62" selection-start="10442" selection-end="10955" vertical-scroll-proportion="0.0" vertical-offset="3238" max-vertical-offset="11900">
-          <folding />
-        </state>
+        <state line="256" column="62" selection-start="10442" selection-end="10955" vertical-scroll-proportion="0.0" vertical-offset="3238" max-vertical-offset="11900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit6/src/com/transcapital/dit/osok/auction/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="17" column="17" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit3/app/views/search.html">
@@ -1070,16 +1058,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit6/src/com/transcapital/dit/osok/auction/Bid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="11" column="15" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit6/src/com/transcapital/dit/osok/auction/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="5" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_Unit6/src/com/transcapital/dit/osok/auction/Main.java">
@@ -1089,70 +1073,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/JavaToJSONStreaming.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/JavaToJSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2124#2125#0" expanded="false" />
-            <element signature="e#2152#2153#0" expanded="false" />
-            <element signature="e#2194#2195#0" expanded="false" />
-            <element signature="e#2228#2229#0" expanded="false" />
-            <element signature="e#2260#2261#0" expanded="false" />
-            <element signature="e#2288#2289#0" expanded="false" />
-            <element signature="e#2330#2331#0" expanded="false" />
-            <element signature="e#2364#2365#0" expanded="false" />
-            <element signature="e#2394#2395#0" expanded="false" />
-            <element signature="e#2420#2421#0" expanded="false" />
-            <element signature="e#2458#2459#0" expanded="false" />
-            <element signature="e#2488#2489#0" expanded="false" />
-            <element signature="e#2526#2527#0" expanded="false" />
-            <element signature="e#2560#2561#0" expanded="false" />
-            <element signature="e#2614#2615#0" expanded="false" />
-            <element signature="e#2660#2661#0" expanded="false" />
-            <element signature="e#2695#2696#0" expanded="false" />
-            <element signature="e#2726#2727#0" expanded="false" />
-            <element signature="e#2774#2775#0" expanded="false" />
-            <element signature="e#2814#2815#0" expanded="false" />
-            <element signature="e#2846#2847#0" expanded="false" />
-            <element signature="e#2871#2872#0" expanded="false" />
-            <element signature="e#2908#2909#0" expanded="false" />
-            <element signature="e#2936#2937#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/entity/Bid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.091644205" vertical-offset="0" max-vertical-offset="1292">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/data/DataEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
@@ -1164,6 +1087,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/websocket/AuctionWebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/websocket/BidEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
@@ -1171,9 +1101,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/websocket/AuctionWebSocketConfig.java">
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/service/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.091644205" vertical-offset="0" max-vertical-offset="742">
+        <state line="20" column="13" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/http/CorsResponseFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/JavaToJSONStreaming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/json/JavaToJSONObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="61" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit7/auction/src/main/java/com/farata/course/mwd/auction/data/DataEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="361" selection-end="361" vertical-scroll-proportion="-0.22457626" vertical-offset="244" max-vertical-offset="1105">
           <folding />
         </state>
       </provider>
