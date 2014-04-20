@@ -84,30 +84,12 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
-    select 
-    <include refid="Base_Column_List" />
-    from BID
-    where BID_ID = #{bidId,jdbcType=DECIMAL}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
-    delete from BID
-    where BID_ID = #{bidId,jdbcType=DECIMAL}
-  </delete>
   <delete id="deleteByExample" parameterType="com.farata.course.mwd.auction.model.BidExample" >
     delete from BID
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.farata.course.mwd.auction.model.Bid" >
-    insert into BID (BID_ID, PRODUCT_ID, AMOUNT, 
-      DESIRED_QUANTITY, BIDDER_ID, BID_TIME
-      )
-    values (#{bidId,jdbcType=DECIMAL}, #{productId,jdbcType=DECIMAL}, #{amount,jdbcType=DECIMAL}, 
-      #{desiredQuantity,jdbcType=DECIMAL}, #{bidderId,jdbcType=DECIMAL}, #{bidTime,jdbcType=TIMESTAMP}
-      )
-  </insert>
   <insert id="insertSelective" parameterType="com.farata.course.mwd.auction.model.Bid" >
     insert into BID
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -214,15 +196,6 @@
         BID_TIME = #{bidTime,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where BID_ID = #{bidId,jdbcType=DECIMAL}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.farata.course.mwd.auction.model.Bid" >
-    update BID
-    set PRODUCT_ID = #{productId,jdbcType=DECIMAL},
-      AMOUNT = #{amount,jdbcType=DECIMAL},
-      DESIRED_QUANTITY = #{desiredQuantity,jdbcType=DECIMAL},
-      BIDDER_ID = #{bidderId,jdbcType=DECIMAL},
-      BID_TIME = #{bidTime,jdbcType=TIMESTAMP}
     where BID_ID = #{bidId,jdbcType=DECIMAL}
   </update>
 </mapper>

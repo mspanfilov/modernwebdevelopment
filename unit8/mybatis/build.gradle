@@ -24,9 +24,11 @@ repositories {
 dependencies {
     // The production code uses the SLF4J logging API at compile time
     // compile 'org.slf4j:slf4j-api:1.7.5'
-    files('lib/ojdbc6.jar')
+    compile files('lib/ojdbc6.jar')
     // compile "com.oracle:ojdbc6:$oracleVersion"
     compile 'org.mybatis:mybatis:3.2.7'
+    // CDI integration
+    // compile 'org.mybatis:mybatis-cdi:1.0.0-beta1'
     testCompile 'org.codehaus.groovy:groovy-all:2.3.0-beta-2'
 
     //testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
@@ -39,6 +41,10 @@ dependencies {
     testCompile "junit:junit:4.11"
 }
 
+idea.module {
+    downloadJavadoc = true
+    downloadSources = true
+}
 
 task makeDirs(description: 'make all dirs for project setup') << {
     def sources = [sourceSets.main, sourceSets.test]

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <classPathEntry location="lib/ojdbc6.jar"/>
+    <classPathEntry location="ojdbc6.jar"/>
 
     <context id="AuctionOraTables" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -23,19 +23,19 @@
         </javaTypeResolver>
 
         <javaModelGenerator targetPackage="com.farata.course.mwd.auction.model"
-                            targetProject="src/main/java">
+                            targetProject="../src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="com.farata.course.mwd.auction.dao"
-                         targetProject="src/main/resources">
+                         targetProject="../src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <!-- ANNOTATEDMAPPER, MIXEDMAPPER< XMLMAPPER -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.farata.course.mwd.auction.dao"
-                             targetProject="src/main/java">
+        <!-- ANNOTATEDMAPPER, MIXEDMAPPER,  XMLMAPPER -->
+        <javaClientGenerator type="MIXEDMAPPER" targetPackage="com.farata.course.mwd.auction.dao"
+                             targetProject="../src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 

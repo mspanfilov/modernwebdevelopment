@@ -88,32 +88,12 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
-    select 
-    <include refid="Base_Column_List" />
-    from PRODUCT
-    where PRODUCT_ID = #{productId,jdbcType=DECIMAL}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
-    delete from PRODUCT
-    where PRODUCT_ID = #{productId,jdbcType=DECIMAL}
-  </delete>
   <delete id="deleteByExample" parameterType="com.farata.course.mwd.auction.model.ProductExample" >
     delete from PRODUCT
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.farata.course.mwd.auction.model.Product" >
-    insert into PRODUCT (PRODUCT_ID, TITLE, THUMB, 
-      DESCRIPTION, QUANTITY, AUCTION_END_TIME, 
-      WATCHERS, MINIMAL_PRICE, RESERVED_PRICE
-      )
-    values (#{productId,jdbcType=DECIMAL}, #{title,jdbcType=VARCHAR}, #{thumb,jdbcType=VARCHAR}, 
-      #{description,jdbcType=VARCHAR}, #{quantity,jdbcType=DECIMAL}, #{auctionEndTime,jdbcType=TIMESTAMP}, 
-      #{watchers,jdbcType=DECIMAL}, #{minimalPrice,jdbcType=DECIMAL}, #{reservedPrice,jdbcType=DECIMAL}
-      )
-  </insert>
   <insert id="insertSelective" parameterType="com.farata.course.mwd.auction.model.Product" >
     insert into PRODUCT
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -259,18 +239,6 @@
         RESERVED_PRICE = #{reservedPrice,jdbcType=DECIMAL},
       </if>
     </set>
-    where PRODUCT_ID = #{productId,jdbcType=DECIMAL}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.farata.course.mwd.auction.model.Product" >
-    update PRODUCT
-    set TITLE = #{title,jdbcType=VARCHAR},
-      THUMB = #{thumb,jdbcType=VARCHAR},
-      DESCRIPTION = #{description,jdbcType=VARCHAR},
-      QUANTITY = #{quantity,jdbcType=DECIMAL},
-      AUCTION_END_TIME = #{auctionEndTime,jdbcType=TIMESTAMP},
-      WATCHERS = #{watchers,jdbcType=DECIMAL},
-      MINIMAL_PRICE = #{minimalPrice,jdbcType=DECIMAL},
-      RESERVED_PRICE = #{reservedPrice,jdbcType=DECIMAL}
     where PRODUCT_ID = #{productId,jdbcType=DECIMAL}
   </update>
 </mapper>

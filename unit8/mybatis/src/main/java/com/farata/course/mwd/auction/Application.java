@@ -42,6 +42,7 @@ public interface Application {
         TransactionFactory ts = new JdbcTransactionFactory();
         Environment envt = new Environment("development", ts, oracleDS);
         Configuration cfg = new Configuration(envt);
+        cfg.setLazyLoadingEnabled(true);
         cfg.addMapper(ProductMapper.class);
         cfg.addMapper(BidMapper.class);
         cfg.addMapper(AuctionUserMapper.class);
@@ -53,7 +54,6 @@ public interface Application {
 
             ProductExample productExample = new ProductExample();
             productExample.createCriteria().andProductIdIsNotNull();
-
 
             List<Product> productList = productMapper.selectByExample(productExample);
             productList.forEach(product -> {

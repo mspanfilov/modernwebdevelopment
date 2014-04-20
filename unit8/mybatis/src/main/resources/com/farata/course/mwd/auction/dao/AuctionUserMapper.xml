@@ -82,28 +82,12 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
-    select 
-    <include refid="Base_Column_List" />
-    from AUCTION_USER
-    where USER_ID = #{userId,jdbcType=DECIMAL}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
-    delete from AUCTION_USER
-    where USER_ID = #{userId,jdbcType=DECIMAL}
-  </delete>
   <delete id="deleteByExample" parameterType="com.farata.course.mwd.auction.model.AuctionUserExample" >
     delete from AUCTION_USER
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.farata.course.mwd.auction.model.AuctionUser" >
-    insert into AUCTION_USER (USER_ID, USER_NAME, EMAIL, 
-      GET_OVERBID_NOTIFICATIONS)
-    values (#{userId,jdbcType=DECIMAL}, #{userName,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
-      #{getOverbidNotifications,jdbcType=DECIMAL})
-  </insert>
   <insert id="insertSelective" parameterType="com.farata.course.mwd.auction.model.AuctionUser" >
     insert into AUCTION_USER
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -184,13 +168,6 @@
         GET_OVERBID_NOTIFICATIONS = #{getOverbidNotifications,jdbcType=DECIMAL},
       </if>
     </set>
-    where USER_ID = #{userId,jdbcType=DECIMAL}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.farata.course.mwd.auction.model.AuctionUser" >
-    update AUCTION_USER
-    set USER_NAME = #{userName,jdbcType=VARCHAR},
-      EMAIL = #{email,jdbcType=VARCHAR},
-      GET_OVERBID_NOTIFICATIONS = #{getOverbidNotifications,jdbcType=DECIMAL}
     where USER_ID = #{userId,jdbcType=DECIMAL}
   </update>
 </mapper>
