@@ -1,0 +1,54 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+mainClassName = "com.farata.course.mwd.auction.Application"
+
+group = "com.farata.course.mwd"
+
+// Java 8 support
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def oracleVersion = '11.2.0.4'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenLocal()
+    jcenter()
+    maven {
+        url = "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    // The production code uses the SLF4J logging API at compile time
+    // compile 'org.slf4j:slf4j-api:1.7.5'
+    files('lib/ojdbc6.jar')
+    // compile "com.oracle:ojdbc6:$oracleVersion"
+    compile 'org.mybatis:mybatis:3.2.7'
+    testCompile 'org.codehaus.groovy:groovy-all:2.3.0-beta-2'
+
+    //testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.0-SNAPSHOT"
+    testRuntime "cglib:cglib-nodep:2.2"
+    // enables mocking of classes (in addition to interfaces)
+    // dependencies used by examples in this project (not required for using Spock)
+    testRuntime 'com.h2database:h2:1.3.176'
+
+    testCompile "junit:junit:4.11"
+}
+
+
+task makeDirs(description: 'make all dirs for project setup') << {
+    def sources = [sourceSets.main, sourceSets.test]
+    sources*.allSource*.srcDirs.flatten().each { File srcDir ->
+        println "making $srcDir"
+        srcDir.mkdirs()
+    }
+}
+
+task collectJars(type: Copy) {
+    into "$buildDir/lib/export"
+    from configurations.testRuntime
+}

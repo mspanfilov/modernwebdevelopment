@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry location="lib/ojdbc6.jar"/>
+
+    <context id="AuctionOraTables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <!-- Configure connection ot database -->
+        <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@//64.135.72.221:1521/xe"
+                        userId="farata"
+                        password="farata">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.farata.course.mwd.auction.model"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.farata.course.mwd.auction.dao"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- ANNOTATEDMAPPER, MIXEDMAPPER< XMLMAPPER -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.farata.course.mwd.auction.dao"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="PRODUCT" domainObjectName="Product">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="AUCTION_USER" domainObjectName="AuctionUser">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="BID" domainObjectName="Bid">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+
+    </context>
+</generatorConfiguration>

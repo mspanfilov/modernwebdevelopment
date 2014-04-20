@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Oracle - xe@64.135.72.221" uuid="4a43aaba-51df-476c-aab9-64d5387622e9">
+    <database-info product="Oracle" version="Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.3.0">
+      <extra-name-characters>$#</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <schema name="ANONYMOUS" catalog=""/>
+    <schema name="APEX_040000" catalog=""/>
+    <schema name="APEX_PUBLIC_USER" catalog=""/>
+    <schema name="CTXSYS" catalog=""/>
+    <schema name="FARATA" catalog=""/>
+    <schema name="FLOWS_FILES" catalog=""/>
+    <schema name="HR" catalog=""/>
+    <schema name="MDSYS" catalog=""/>
+    <schema name="OUTLN" catalog=""/>
+    <schema name="SYS" catalog=""/>
+    <schema name="SYSTEM" catalog=""/>
+    <schema name="XDB" catalog=""/>
+    <schema name="XS$NULL" catalog=""/>
+  </data-source>
+</component>

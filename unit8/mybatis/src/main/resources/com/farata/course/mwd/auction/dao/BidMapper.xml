@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.farata.course.mwd.auction.dao.BidMapper" >
+  <resultMap id="BaseResultMap" type="com.farata.course.mwd.auction.model.Bid" >
+    <id column="BID_ID" property="bidId" jdbcType="DECIMAL" />
+    <result column="PRODUCT_ID" property="productId" jdbcType="DECIMAL" />
+    <result column="AMOUNT" property="amount" jdbcType="DECIMAL" />
+    <result column="DESIRED_QUANTITY" property="desiredQuantity" jdbcType="DECIMAL" />
+    <result column="BIDDER_ID" property="bidderId" jdbcType="DECIMAL" />
+    <result column="BID_TIME" property="bidTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    BID_ID, PRODUCT_ID, AMOUNT, DESIRED_QUANTITY, BIDDER_ID, BID_TIME
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.farata.course.mwd.auction.model.BidExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from BID
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
+    select 
+    <include refid="Base_Column_List" />
+    from BID
+    where BID_ID = #{bidId,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
+    delete from BID
+    where BID_ID = #{bidId,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.farata.course.mwd.auction.model.BidExample" >
+    delete from BID
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.farata.course.mwd.auction.model.Bid" >
+    insert into BID (BID_ID, PRODUCT_ID, AMOUNT, 
+      DESIRED_QUANTITY, BIDDER_ID, BID_TIME
+      )
+    values (#{bidId,jdbcType=DECIMAL}, #{productId,jdbcType=DECIMAL}, #{amount,jdbcType=DECIMAL}, 
+      #{desiredQuantity,jdbcType=DECIMAL}, #{bidderId,jdbcType=DECIMAL}, #{bidTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.farata.course.mwd.auction.model.Bid" >
+    insert into BID
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bidId != null" >
+        BID_ID,
+      </if>
+      <if test="productId != null" >
+        PRODUCT_ID,
+      </if>
+      <if test="amount != null" >
+        AMOUNT,
+      </if>
+      <if test="desiredQuantity != null" >
+        DESIRED_QUANTITY,
+      </if>
+      <if test="bidderId != null" >
+        BIDDER_ID,
+      </if>
+      <if test="bidTime != null" >
+        BID_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bidId != null" >
+        #{bidId,jdbcType=DECIMAL},
+      </if>
+      <if test="productId != null" >
+        #{productId,jdbcType=DECIMAL},
+      </if>
+      <if test="amount != null" >
+        #{amount,jdbcType=DECIMAL},
+      </if>
+      <if test="desiredQuantity != null" >
+        #{desiredQuantity,jdbcType=DECIMAL},
+      </if>
+      <if test="bidderId != null" >
+        #{bidderId,jdbcType=DECIMAL},
+      </if>
+      <if test="bidTime != null" >
+        #{bidTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.farata.course.mwd.auction.model.BidExample" resultType="java.lang.Integer" >
+    select count(*) from BID
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update BID
+    <set >
+      <if test="record.bidId != null" >
+        BID_ID = #{record.bidId,jdbcType=DECIMAL},
+      </if>
+      <if test="record.productId != null" >
+        PRODUCT_ID = #{record.productId,jdbcType=DECIMAL},
+      </if>
+      <if test="record.amount != null" >
+        AMOUNT = #{record.amount,jdbcType=DECIMAL},
+      </if>
+      <if test="record.desiredQuantity != null" >
+        DESIRED_QUANTITY = #{record.desiredQuantity,jdbcType=DECIMAL},
+      </if>
+      <if test="record.bidderId != null" >
+        BIDDER_ID = #{record.bidderId,jdbcType=DECIMAL},
+      </if>
+      <if test="record.bidTime != null" >
+        BID_TIME = #{record.bidTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update BID
+    set BID_ID = #{record.bidId,jdbcType=DECIMAL},
+      PRODUCT_ID = #{record.productId,jdbcType=DECIMAL},
+      AMOUNT = #{record.amount,jdbcType=DECIMAL},
+      DESIRED_QUANTITY = #{record.desiredQuantity,jdbcType=DECIMAL},
+      BIDDER_ID = #{record.bidderId,jdbcType=DECIMAL},
+      BID_TIME = #{record.bidTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.farata.course.mwd.auction.model.Bid" >
+    update BID
+    <set >
+      <if test="productId != null" >
+        PRODUCT_ID = #{productId,jdbcType=DECIMAL},
+      </if>
+      <if test="amount != null" >
+        AMOUNT = #{amount,jdbcType=DECIMAL},
+      </if>
+      <if test="desiredQuantity != null" >
+        DESIRED_QUANTITY = #{desiredQuantity,jdbcType=DECIMAL},
+      </if>
+      <if test="bidderId != null" >
+        BIDDER_ID = #{bidderId,jdbcType=DECIMAL},
+      </if>
+      <if test="bidTime != null" >
+        BID_TIME = #{bidTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where BID_ID = #{bidId,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.farata.course.mwd.auction.model.Bid" >
+    update BID
+    set PRODUCT_ID = #{productId,jdbcType=DECIMAL},
+      AMOUNT = #{amount,jdbcType=DECIMAL},
+      DESIRED_QUANTITY = #{desiredQuantity,jdbcType=DECIMAL},
+      BIDDER_ID = #{bidderId,jdbcType=DECIMAL},
+      BID_TIME = #{bidTime,jdbcType=TIMESTAMP}
+    where BID_ID = #{bidId,jdbcType=DECIMAL}
+  </update>
+</mapper>
