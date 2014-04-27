@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/unit8/mybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/unit9/unit9/auction_jaxrs" />
   </component>
   <component name="IdProvider" IDEtalkID="487713D0D15B8B60C9F6714A2E2E871F" />
   <component name="ProjectInspectionProfilesVisibleTreeState">

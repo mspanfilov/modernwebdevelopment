@@ -12,6 +12,16 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/unit9/unit9/auction_jaxrs" />
+        <option name="gradleHome" value="C:/gradle-1.11-all/gradle-1.11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/unit9/unit9/auction_jaxrs" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
