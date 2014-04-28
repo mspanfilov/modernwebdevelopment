@@ -4,6 +4,16 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/hw6" />
+        <option name="gradleHome" value="C:/gradle-1.11-all/gradle-1.11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/hw6" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/unit8/mybatis" />
         <option name="gradleHome" value="C:/gradle-1.11-all/gradle-1.11" />
         <option name="modules">

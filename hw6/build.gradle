@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+// http://www.gradle.org/docs/current/userguide/application_plugin.html
+apply plugin: 'application'
+
+// Java 8 support
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    testCompile 'org.codehaus.groovy:groovy-all:2.3.0-beta-1'
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.0-SNAPSHOT"
+    testRuntime "cglib:cglib-nodep:2.2"
+}

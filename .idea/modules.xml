@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hw6/Auction.iml" filepath="$PROJECT_DIR$/hw6/Auction.iml" />
       <module fileurl="file://$PROJECT_DIR$/J8/J8.iml" filepath="$PROJECT_DIR$/J8/J8.iml" />
       <module fileurl="file://$PROJECT_DIR$/unit9/unit9/auction_jaxrs/auction_jaxrs.iml" filepath="$PROJECT_DIR$/unit9/unit9/auction_jaxrs/auction_jaxrs.iml" />
       <module fileurl="file://$PROJECT_DIR$/unit8/mybatis/database.iml" filepath="$PROJECT_DIR$/unit8/mybatis/database.iml" />
